@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Salario {
+	public static void main(String[] args) {
+		double horaT, salMin, salBruto,salFinal, valorHora, imposto = 0.03;
+
+		Scanner recebe = new Scanner(System.in);
+
+		System.out.println("Horas trabalhadas: ");
+		horaT = recebe.nextDouble();
+
+		System.out.println("Salario minimo: ");
+		salMin = recebe.nextDouble();
+
+		valorHora = 0.10 * salMin;
+		salBruto = horaT*valorHora;
+		salFinal=salBruto-(salBruto*imposto);
+		
+		System.out.println(String.format("Salario liquido: %.2f",salFinal));
+		
+	}
+}

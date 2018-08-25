@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CalculaRetangulo {
+
+public static void main(String[] args) {
+		
+		Retangulo r = new Retangulo();
+		
+		Scanner recebe = new Scanner(System.in);
+		
+		System.out.println("Base: ");
+		r.setBase(recebe.nextDouble());
+		System.out.println("Altura: ");
+		r.setAltura(recebe.nextDouble());
+
+		System.out.println("QTD pisos: " + r.calculaArea(r.getBase(), r.getAltura())+"m²");
+		System.out.println("QTD rodape: " + r.calculaPerimetro(r.getBase(), r.getAltura())+"m²");
+	}
+}

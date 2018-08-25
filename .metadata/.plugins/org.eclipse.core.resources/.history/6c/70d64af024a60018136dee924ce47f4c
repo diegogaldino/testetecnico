@@ -1,0 +1,14 @@
+
+public class Funcionario {
+	public static void main(String[] args) {
+	
+		double salario=1000,aumento=1.03;
+		salario = salario * 1.015;
+		System.out.println(salario);
+		
+		for (int c=0; c<12;c++){
+			salario = salario * aumento;
+			System.out.println(salario);
+		}
+	}
+}

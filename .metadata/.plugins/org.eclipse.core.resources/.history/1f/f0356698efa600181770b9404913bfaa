@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+
+public class Salario {
+
+	double horaT, salMin, salBruto, imposto = 0.03;
+
+	Scanner recebe = new Scanner(System.in);
+
+	System.out.println("Horas trabalhada: ");
+	inicio = recebe.nextInt();
+
+	System.out.println("Digite valor de fim: ");
+	fim = recebe.nextInt();
+}

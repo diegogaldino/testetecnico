@@ -1,0 +1,19 @@
+public class Funcionario {
+	public static void main(String[] args) {
+
+		double salario = 1000, aumento = 0.015;
+		salario = salario * (aumento + 1);
+		System.out.println("Ano: 2006");
+		System.out.println("Salario: " + salario);
+
+		for (int c = 2007; c <= 2018; c++) {
+			System.out.println("Ano: "+c);
+			aumento = aumento + aumento;
+			System.out.println("Aumento: " + aumento);
+			salario = (salario * aumento) + salario;
+			System.out.println("Salario: " + salario);
+		}
+
+		System.out.println("Salario atual " + salario);
+	}
+}
